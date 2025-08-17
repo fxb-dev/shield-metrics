@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    container_name: shield-metrics-backend
+    environment:
+      - FLASK_ENV=production
+    networks:
+      - shield-network
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: shield-metrics-frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - shield-network
+
+networks:
+  shield-network:
+    driver: bridge

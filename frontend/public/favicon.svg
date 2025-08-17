@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Square background -->
+  <rect x="8" y="8" width="48" height="48" 
+        fill="#D64933" 
+        stroke="#ffffff" 
+        stroke-width="2"/>
+  <!-- S letter -->
+  <text x="32" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" 
+        text-anchor="middle" fill="white">S</text>
+</svg>
